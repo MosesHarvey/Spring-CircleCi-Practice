@@ -6,8 +6,8 @@ workflows:
 jobs:
   build:
     docker:
-      - image: cimg/node:21.2.0
-    steps:
-      - checkout
-      - run: node --version 
+      - image: cimg/openjdk:21.0.0
+      steps:
+        - checkout
+        - run: java --version
     
